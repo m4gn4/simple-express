@@ -4,7 +4,7 @@ services:
     container_name: "node-container"
     build: .
     ports:
-      - 3000:9999
+      - 4000:9999
     environment:
       - PORT=9999
     command: node server.js
