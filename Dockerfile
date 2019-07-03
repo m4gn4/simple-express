@@ -1,2 +1,5 @@
 FROM node:12
-RUN npm init -y ; npm install express body-parser
+WORKDIR /opt/server
+
+COPY ./ ./
+RUN yarn
